@@ -20,7 +20,7 @@
 ## **소개**
 React 16 에서 처음 도입된 개념으로 , 그 전까지는 UI component의 일부분에서 문제가 발생하면 자바스크립트 에러가 전체 애플리케이션을 중단시켰습니다. 잘못된 정보를 보여주는 것보다 보여주지 않는게 낫다고 생각하기 때문입니다. 다만 이는 좋은 사용자 경험이라고 말할 수는 없습니다.
 
-![Error_Img](/src/img/Error1.png)
+![Error_Img](./src/img/Error1.png)
 <center>에러가 발생해서 컴포넌트가 중단된 모습</center>  
 
 </br>
@@ -34,14 +34,14 @@ Error Boundary는 하위 component 트리의 어디에서든 자바스크립트 
 ## **사용하게 된 이유**
 Error Boundary를 사용하지 않았을 때 , 내부 로직에서 오류가 생기면 페이지 전체가 백지로 표시되어 버리는 이슈가 있습니다. 그때 Error Boundary를 사용하게 되면 , 특정 로직에 오류가 발생해도 페이지 전체가 백지가 되는 것이 아닌 , 대체 UI를 표시할 수 있습니다.
 
-![Normal_Img](/src/img/normal1.png)
+![Normal_Img](./src/img/normal1.png)
 <center>정상적인 화면</center>
 
 </br>
 
 카운터가 5로 증가하면 에러를 표시하는 counter를 표시하는 화면입니다. 현재는 모두 0이므로 에러가 표시되지 않습니다. 이 때 특정 counter가 5가 되면
 
-![Error2_Img](/src/img/Error2.png)
+![Error2_Img](./src/img/Error2.png)
 <center>Error4에 에러가 발생한 모습</center>
 
 </br>
@@ -69,14 +69,14 @@ Error Boundary가 표시되길 원하는 특정 component를 감싸주기만 하
 ## **장점**
 가장 큰 장점으로는 특정 로직에 에러가 발생해도 전체 페이지에 영향을 주지 않아서 페이지가 백지로 표시되지 않는 장점이 있습니다. 특정 component에 에러가 발생해도 , 그 component가 가진 기능 외에 다른 기능은 사용 가능합니다. 또한, 개발자의 의도에 따라서 배치할 수 있다는 장점이 있습니다.
 
-![Error34_Img](/src/img/Error34.png)
+![Error34_Img](./src/img/Error34.png)
 <center>Error3, Error4에 에러가 발생한 모습</center>
 
 </br>
 
 Error 3과 Error 4에 에러가 발생한 모습입니다. 이렇게 각각의 component 에러가 발생했다는 것을 표시할 수 있을 뿐만 아니라 여러 component중 하나만 에러가 발생해도 폴백 UI를 표시할 수 있습니다.
 
-![Error12_Img](/src/img/Error12.png)
+![Error12_Img](./src/img/Error12.png)
 <center>Error1 또는 Error2에 에러가 발생한 모습</center>
 
 </br>
