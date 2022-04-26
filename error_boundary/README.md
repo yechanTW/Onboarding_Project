@@ -1,6 +1,6 @@
 # **Error Boundary (에러 경계)**
 
-## [공식문서](https://ko.reactjs.org/docs/error-boundaries.html)
+### [공식문서](https://ko.reactjs.org/docs/error-boundaries.html)
 
 </br>
 
