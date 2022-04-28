@@ -6,3 +6,7 @@
 ### 2. [Testing](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_1_WEEK/testing)
 ### 3. [RPD-3060](https://github.com/twinnylab/taras-web/pull/173)
 ### 4. [GraphQL](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_1_WEEK/graphql)
+
+## INSIGHT
+
+### [DAY.JS](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_1_WEEK/dayjs)
