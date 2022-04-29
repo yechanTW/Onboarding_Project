@@ -145,6 +145,45 @@ test("allows for initial value", () => {
 
 React Hooks Testing Library를 사용한 테스팅 입니다. npm을 이용해 설치할 수 있고 , component없이 직접 테스트 할 수 있습니다. 
 
+### parameterized test
+
+첫 Test PR을 날려보고 그 이후에 새로 알게된 내용입니다. 기존 코드를 예시로 들면
+
+```js
+const CASES = [
+  { input: 0, expected: 0 },
+  { input: 1, expected: 1 },
+];
+it.each(CASES)(
+  'hook 인자(input)와 state 초기값(expected)은 동일하다',
+  ({ input, expected }) => {
+    const { result } = renderHook(() => useCustomHook(input));
+    expect(result.current.selectedIndex).toEqual(expected);
+  },
+);
+```
+
+Case를 만들어서 결과를 산출하는 방법이었습니다. 다만 이 방법의 문제는 케이스별로 넘버를 매길 수 없고, 개수가 많아지는 경우에는 불편한 경우가 있었습니다. 이 경우를 parameterized test 로 변경한다면
+
+```js
+it.each`
+  #    | index | selectedIndex
+  ${1} | ${0}  | ${0}
+  ${2} | ${0}  | ${0}
+  ${3} | ${1}  | ${1}
+  ${4} | ${1}  | ${1}
+`(
+  'case $#) useCustomHook($index) 일 때 `selectedIndex`의 초기 값은 $index 이다',
+  ({ index, selectedIndex }) => {
+    const { result } = renderHook(() => useCustomHook(index));
+    expect(result.current.selectedIndex).toEqual(selectedIndex);
+  },
+);
+```
+
+이런식으로 테이블 형태로 변경이 가능한데, 이렇게 되면 실제로 Test에서 무엇을 어떻게 테스트하고 어떤식으로 예측이 되는지 쉽게 파악이 될 뿐만 아니라 , 실제 테스트 결과가 케이스 형태로 나오게 되어서 훨씬 파악하기 쉬웠습니다. 테스트를 쉽게 인식하고 쉽게 수정할 수 있는 목적에 더 맞는 것 같아서 더 효율적인 방법인 것 같습니다.
+
+</br>
 
 
 ## 참고 자료
