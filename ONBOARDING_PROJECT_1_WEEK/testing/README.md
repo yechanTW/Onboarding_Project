@@ -10,7 +10,8 @@
 2. [단위 테스트](#단위-테스트)
 3. [React Hooks Testing Library](#react-hooks-testing-library)
 4. [설치 및 실행](#설치-및-실행)
-5. [참고 자료](#참고-자료)
+5. [parameterized test](#parameterized-test)
+6. [참고 자료](#참고-자료)
 
 </br>
 
@@ -145,7 +146,9 @@ test("allows for initial value", () => {
 
 React Hooks Testing Library를 사용한 테스팅 입니다. npm을 이용해 설치할 수 있고 , component없이 직접 테스트 할 수 있습니다. 
 
-### parameterized test
+</br>
+
+## parameterized test
 
 첫 Test PR을 날려보고 그 이후에 새로 알게된 내용입니다. 기존 코드를 예시로 들면
 
