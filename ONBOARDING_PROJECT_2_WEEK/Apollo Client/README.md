@@ -23,3 +23,17 @@ Apollo Client는 GraphQL 기반의 라이브러리로 , 로컬에서 전역 상�
 ## 반응 변수
 
 Apollo Client 에서 제공하는 **makeVar** 함수를 통해 반응 변수를 만들 수 있는데 , 이 반응 변수는 Apollo Client 캐시 외부에 로컬 상태를 저장합니다.
+
+## fetchPolicy
+
+## useQuery
+
+
+
+
+
+
+
+1. __typename key역할 , 캐시에 있는지 없는지 확인할때 key로 쓰이는 것 ?
+2. useMutation의 순서 , 캐시 변환 후 서버 수정 vs 서버 수정후 캐싱
+3. 캐싱되었는지 확인 , 캐싱된 정보와 서버가 다른지 같은지 어떻게 식별하는지 ?
