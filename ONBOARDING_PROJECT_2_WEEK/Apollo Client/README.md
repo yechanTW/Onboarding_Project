@@ -6,7 +6,7 @@ Apollo Client는 GraphQL 기반의 라이브러리로 , 로컬에서 전역 상�
 
 </br>
 
-## 통신 과정
+## 통신 과정 ( 기본 값 : cache-first )
 
 1. apollo client가 쿼리를 통해 로컬 / 원격 필드를 요청하면 , 
 2. cache는 요청받은 쿼리를 통해 동일한 쿼리가 캐싱되어 있는지 확인하고
@@ -22,7 +22,7 @@ Apollo Client는 GraphQL 기반의 라이브러리로 , 로컬에서 전역 상�
 
 ## 반응 변수
 
-Apollo Client 에서 제공하는 **makeVar** 함수를 통해 반응 변수를 만들 수 있는데 , 이 반응 변수는 Apollo Client 캐시 외부에 로컬 상태를 저장합니다. useReactiveVar을 사용해서 캐시에 정의하지 않고 , 쿼리를 작성하지 않아도 직접 반응 변수에서 상태를 가져올 수 있습니다. 
+Apollo Client 에서 제공하는 **makeVar** 함수를 통해 반응 변수를 만들 수 있는데 , 이 반응 변수는 Apollo Client 캐시 외부에 로컬 상태를 저장합니다. useReactiveVar을 사용해서 캐시에 정의하지 않고 , 쿼리를 작성하지 않아도 직접 반응 변수에서 상태를 가져올 수 있습니다. useReactiveVar를 사용해서 수정 및 업데이트할 수 있습니다.
 
 </br>
 
@@ -47,8 +47,21 @@ GraphQL에서 어려운 캐싱 문제를 해결하는 방법으로 , HTTP 요청
 
 </br>
 
+## useQuery , useMutation
+
+</br>
+
 ## 질문
 
-1.  addTypename, __typename 역할 ?
-2.  useMutation의 순서 , 캐시 변환 후 서버 수정 vs 서버 수정후 캐싱
-3.  캐싱되었는지 확인 , 캐싱된 정보와 서버가 다른지 같은지 어떻게 식별하는지 ?
+1.  addTypename 역할은 무엇인지 ?
+    - true일 때 쿼리의 모든 object에 __typename 필드가 자동으로 추가됩니다.(기본값이 true)
+2. __typename은 무엇인지 ?
+    - 11
+3.  useMutation의 순서 , 캐시 변환 후 서버 수정 vs 서버 수정후 캐싱되는지 ?
+4.  또한 쿼리 요청시 캐싱되었는지 확인 , 캐싱된 정보와 서버가 다른지 같은지 어떻게 식별하는지 ? 
+    - 3번과 4번은 모두 fetch-policy 속성을 따라갑니다. 쿼리를 요청할 때 정해진 fetch-policy로 데이터들을 어떤 방법으로 컨트롤할지를 정하고 따라갑니다.
+5.  fetch-policy 속성에서 watchQuery와 Query 속성의 차이 ?
+    - Query는 단순히 Read에 해당하며 , 데이터를 가져오기만 한다.\
+    하지만 watchQuery는 mutation이 일어날 때 , DB에 업데이트가 일어날 때 자동적으로 query를 날려준다.
+6. makeVar로 반응 변수를 만드는 이유 ?
+    - 반응 변수는 apollo가 캐시 외부에서 로컬 상태 관리를 하기 위해 만들어지는 변수입니다. 캐시와 분리되기 때문에 모든 유형 및 구조의 데이터를 저장할 수 있을 뿐 아니라 graphQL 구문을 사용하지 않고도 전역에서 이 변수를 사용할 수 있습니다. 
