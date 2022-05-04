@@ -1,6 +1,7 @@
 # Apollo Client
 
 ### [공식 문서](https://www.apollographql.com/)
+### [한글 문서](https://graphql-kr.github.io/)
 
 Apollo Client는 GraphQL 기반의 라이브러리로 , 로컬에서 전역 상태관리를 하기 위해 사용합니다. 원래는 GraphQL을 사용해서 서버와 통신을 하면서 반환한 값을 캐시로 보관하는데 , 일부 서비스는 서버 없이 완전히 독립적으로 작동할 수 있고 (반응 변수) , 그런 경우에도 로컬 상태를 관리할 수 있습니다. 즉 추가적인 상태관리 라이브러리를 사용하지 않고도 충분히 전역 상태관리를 적용할 수 있습니다.
 
@@ -15,8 +16,6 @@ Apollo Client는 GraphQL 기반의 라이브러리로 , 로컬에서 전역 상�
 5. 캐시는 반환 받은 필드를 캐시에 저장하고 클라이언트에게 필드 반환합니다.
 
 만약 3번에서 캐싱 되어있다면 , 서버에 따로 요청하지 않고 바로 반환합니다. 이처럼 Apollo Client는 캐시를 통해서 상태관리를 하고 로컬 상태도 관리할 수 있습니다. 이것에 대한 정책은 fetchPolicy를 통해서 정해집니다.
-
-( 기존 상태 관리인 Redux는  액션이 발생하면 서버에 요청 후 , 응답을 받으면 리듀서에게 전달하고 리듀서는 스토어에 state tree를 업데이트 해서 state를 관리하는 방식이었습니다. 이는 컴포넌트 하나를 렌더링하기 위해서 너무 많은 과정이 필요하고 , 서버와 통신하는 과정에서 여러 endpoint를 인해 복잡도 증가 , overfetching/underfetching의 문제가 존재했습니다. )
 
 </br>
 
@@ -47,18 +46,15 @@ GraphQL에서 어려운 캐싱 문제를 해결하는 방법으로 , HTTP 요청
 
 </br>
 
-## useQuery , useMutation
-
-</br>
-
 ## 질문
 
 1.  addTypename 역할은 무엇인지 ?
     - true일 때 쿼리의 모든 object에 __typename 필드가 자동으로 추가됩니다.(기본값이 true)
+
 </br>
 
 2. __typename은 무엇인지 ?
-    - 11
+    - 리턴될 타입을 알지 못하면 클라이언트에서 데이터를 처리하는 방법을 결정할 방법이 필요합니다. 그 떄 객체 타입의 이름을 알기 위해서 __typename 이라는 메타 필드가 추가됩니다.
 
 </br>
 
@@ -69,10 +65,17 @@ GraphQL에서 어려운 캐싱 문제를 해결하는 방법으로 , HTTP 요청
 </br>
 
 5.  fetch-policy 속성에서 watchQuery와 Query 속성의 차이 ?
-    - Query는 단순히 Read에 해당하며 , 데이터를 가져오기만 한다.\
+    - Query는 단순히 Read에 해당하며 , 데이터를 가져오기만 합니다.\
     하지만 watchQuery는 mutation이 일어날 때 , DB에 업데이트가 일어날 때 자동적으로 query를 날려준다.
 
 </br>
 
 6. makeVar로 반응 변수를 만드는 이유 ?
     - 반응 변수는 apollo가 캐시 외부에서 로컬 상태 관리를 하기 위해 만들어지는 변수입니다. 캐시와 분리되기 때문에 모든 유형 및 구조의 데이터를 저장할 수 있을 뿐 아니라 graphQL 구문을 사용하지 않고도 전역에서 이 변수를 사용할 수 있습니다. 
+
+## 참고 문서
+
+https://chanyeong.com/blog/post/45 \
+https://horang98.tistory.com/6  \
+https://graphql-kr.github.io/learn/queries/
+
