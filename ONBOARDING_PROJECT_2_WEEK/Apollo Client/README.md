@@ -21,7 +21,7 @@ Apollo Client는 GraphQL 기반의 라이브러리로 , 로컬에서 전역 상�
 
 ## 반응 변수
 
-Apollo Client 에서 제공하는 **makeVar** 함수를 통해 반응 변수를 만들 수 있는데 , 이 반응 변수는 Apollo Client 캐시 외부에 로컬 상태를 저장합니다. useReactiveVar을 사용해서 캐시에 정의하지 않고 , 쿼리를 작성하지 않아도 직접 반응 변수에서 상태를 가져올 수 있습니다. useReactiveVar를 사용해서 수정 및 업데이트할 수 있습니다.
+Apollo Client 에서 제공하는 **makeVar** 함수를 통해 반응 변수를 만들 수 있는데 , 이 반응 변수는 Apollo Client 캐시 외부에 로컬 상태를 저장합니다. useReactiveVar을 사용해서 캐시에 정의하지 않고 , 쿼리를 작성하지 않아도 직접 반응 변수에서 상태를 가져올 수 있습니다.
 
 </br>
 
