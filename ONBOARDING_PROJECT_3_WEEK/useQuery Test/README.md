@@ -14,3 +14,21 @@ RTL은 요소를 렌더링하는 부분을 다루고 , 실제 Dom의 노드들�
 
 apollo-client를 사용하는 리액트 구성 요소를 테스트 하기 위한 요소로 , 테스트에서 GraphQL 서버와 통신할 필요 없이 개별 쿼리에 대한 mock 응답을 정의해줍니다. 
 
+## Jest Mocking
+
+가짜 함수 ( mock function ) 을 만드는 jest.fn() 을 사용해서 만들 수 있습니다.
+또한 mockReturnValue()를 통해 리턴할 값을 정할 수 있습니다.
+
+```js
+const mockFn = jest.fn();
+mockFn.mockReturnValue('Hello World');
+console.log(mockFn());  // Hello World
+
+mockFn.mockImplementation((name) => `Hello ${name}`);
+console.log(mockFn('world'));   // Hello world
+```
+
+
+## Jest.spyOn()
+
+jest.fn() 과 비슷하지만 , spyOn()은 호출에 대해 추적이 가능합니다. 
