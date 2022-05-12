@@ -87,19 +87,3 @@ await waitForNextUpdate();
 expect(result.current.id).toBe(REPO_ID);
 // id값에 mocking한 hook이 작동되고 특정 값과 같은지 비교하는 단계
 ```
-
-</br>
-
-
-
-
-
-</br>
-
-</br>
-
-</br>
-
-</br>
-
-</br>
