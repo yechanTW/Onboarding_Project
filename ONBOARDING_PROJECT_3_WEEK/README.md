@@ -12,7 +12,7 @@
 
 ## INSIGHT
 
-### [목표 설정 관련 글](https://brunch.co.kr/@xharleskim/112)
+### [nanoid](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_3_WEEK/nanoid)
 
 </br>
 
