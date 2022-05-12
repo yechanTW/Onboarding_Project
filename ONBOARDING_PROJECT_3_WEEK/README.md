@@ -1,4 +1,4 @@
-# Onboarding_Project_2_week
+# Onboarding_Project_3_week
 
 ## 온보딩 프로젝트 3주차 입니다.
 
