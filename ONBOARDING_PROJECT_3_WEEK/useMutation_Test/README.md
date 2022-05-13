@@ -33,3 +33,6 @@ jest.mock('react-router-dom', () => ({
 react-router-dom 모듈을 mocking하는데, 실제 모듈을 반환하며 그중 useParams를 jest.fn으로 mocking합니다. 
 
 </br>
+
+## toStrictEqual
+toEqual 보다 더 엄격하게 비교합니다. undefined 속성이 있는 키도 확인됩니다.
