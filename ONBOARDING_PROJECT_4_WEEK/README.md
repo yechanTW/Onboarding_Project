@@ -12,7 +12,7 @@
 
 
 ## Study
-### 1. rebase and merge study 1주차
+### 1. [git rebase and merge 스터디](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_4_WEEK/Rebase%20and%20Merge)
 ### 2. [기존 클린코드 PR내용 스터디, 개선 및 정보 공유 ( 2. 함수 )](https://github.com/yechanTW/CleanCoding)
 </br>
 
