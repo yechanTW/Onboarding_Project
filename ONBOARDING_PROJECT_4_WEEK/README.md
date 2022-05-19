@@ -4,7 +4,7 @@
 
 ### 1. [PRD-3234(useMutation + input test)](https://github.com/twinnylab/taras-web/pull/197)
 ### 2. [페어 프로그래밍 1주차](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_4_WEEK/Pair_Programing%201%EC%A3%BC%EC%B0%A8)
-
+- ### [[RPD-3270] 서비스 상세: 정보 셀 UI 컴포넌트 구현](https://github.com/twinnylab/taras-web/pull/208)
 ### 3. [[RPD-3281]React Hook test code 작성 ( useLogin )](https://github.com/twinnylab/taras-web/pull/206)
 - ### [jest mock](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_4_WEEK/Jest%20Mock)
 ### 4. rebase and merge study 1주차
