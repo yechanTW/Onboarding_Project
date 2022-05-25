@@ -4,9 +4,13 @@
 
 ## TARAS-Web
 ### 1. [PRD-3282(userUtil)](https://github.com/twinnylab/taras-web/pull/216)
+### 2. [RPD-3366(워크스페이스 목록 , 카드 디자인 리뉴얼)](https://github.com/twinnylab/taras-web/pull/221)
+### 3. [RPD-3142(약관 페이지 가로 스크롤 제거)](https://github.com/twinnylab/taras-web/pull/225)
+### 4. 
 
 ## Study
 ### 1. [기존 클린코드 PR내용 스터디, 개선 및 정보 공유 ( 3. 중복 코드 , 매개변수 )](https://github.com/yechanTW/CleanCoding)
+### 2. [타입스크립트]()
 </br>
 
 ## INSIGHT
