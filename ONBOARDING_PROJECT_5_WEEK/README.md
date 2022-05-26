@@ -6,17 +6,11 @@
 ### 1. [RPD-3282(userUtil 리팩토링)](https://github.com/twinnylab/taras-web/pull/216)
 ### 2. [RPD-3366(워크스페이스 목록 , 카드 디자인 리뉴얼)](https://github.com/twinnylab/taras-web/pull/221)
 ### 3. [RPD-3142(약관 페이지 가로 스크롤 제거)](https://github.com/twinnylab/taras-web/pull/225)
-* [overflow]()
-### 4. 
+* [overflow](https://github.com/yechanTW/Onboarding_Project/tree/main/ONBOARDING_PROJECT_5_WEEK/overflow)
+### 4. [RPD-3424(세션 미갱신으로 쿼리가 차단되는 현상 진행중)]()
+
+</br>
 
 ## Study
 ### 1. [기존 클린코드 PR내용 스터디, 개선 및 정보 공유 ( 3. 중복 코드 , 매개변수 )](https://github.com/yechanTW/CleanCoding)
 ### 2. [타입스크립트](https://twinny.atlassian.net/wiki/spaces/TRSITEAM/pages/4582212433/Web+TypeScript)
-</br>
-
-## INSIGHT
-
-</br>
-
-## Feedback
-- 
