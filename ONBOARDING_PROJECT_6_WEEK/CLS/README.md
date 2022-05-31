@@ -84,3 +84,7 @@ TARAS-Web 에서 사이드바를 클릭하면 버튼 등 안에 있는 컴포넌
 
 2. display : none
 * display 역시 같은 issue가 발생했다.
+
+3. LightHouse 검사시에는 CLS가 0으로 측정됨.
+![image](https://user-images.githubusercontent.com/103919553/171130937-ecdc86d8-8b68-4149-80ca-53a2ac9013c2.png)
+
