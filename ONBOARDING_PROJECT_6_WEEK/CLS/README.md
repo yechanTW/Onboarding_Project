@@ -85,6 +85,9 @@ TARAS-Web 에서 사이드바를 클릭하면 버튼 등 안에 있는 컴포넌
 2. display : none
 * display 역시 같은 issue가 발생했다.
 
-3. LightHouse 검사시에는 CLS가 0으로 측정됨.
-![image](https://user-images.githubusercontent.com/103919553/171130937-ecdc86d8-8b68-4149-80ca-53a2ac9013c2.png)
+3. LightHouse 검사시에는 CLS가 0.001 로 측정됨.
+![image](https://user-images.githubusercontent.com/103919553/171559452-e91d9d31-171f-4593-b276-a29dccf8bf51.png)
 
+- 0.1 이하에서는 계산할 것이 없다고 함.
+- ![image](https://user-images.githubusercontent.com/103919553/171559818-6a174e8c-f973-46d7-9c31-0feaffa23415.png)
+- [참고글](https://gtmetrix.com/cumulative-layout-shift.html)
